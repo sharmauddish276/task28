@@ -1,0 +1,169 @@
+/* Basic Styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6fb;
+  color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #252b48;
+  padding: 18px 40px;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #8da7ff;
+}
+
+/* Common Page Styling */
+.page {
+  text-align: center;
+  padding: 100px 20px;
+  min-height: 75vh;
+}
+
+.page h1 {
+  color: #252b48;
+  font-size: 38px;
+}
+
+.page p {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  background-color: #536dfe;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #354de0;
+}
+
+/* Dashboard */
+.dashboard-box {
+  background-color: white;
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px #dddddd;
+}
+
+/* Login and Signup Forms */
+.form-container {
+  background-color: white;
+  width: 350px;
+  max-width: 90%;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px #dddddd;
+}
+
+.form-container h1 {
+  text-align: center;
+  color: #252b48;
+}
+
+.form-container p {
+  text-align: center;
+  color: #666;
+}
+
+.form-container label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+.form-container button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #536dfe;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #354de0;
+}
+
+.form-container a {
+  color: #536dfe;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #252b48;
+  color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .page {
+    padding: 70px 15px;
+  }
+
+  .page h1 {
+    font-size: 30px;
+  }
+}
